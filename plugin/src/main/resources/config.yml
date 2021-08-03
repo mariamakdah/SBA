@@ -12,7 +12,7 @@ compass-enabled: true
 join-randomly-on-lobby-join: false
 add-wool-to-inventory-on-join: true
 prevent-spawning-mobs: true
-spawner-holograms: false
+spawner-holograms: true
 spawner-disable-merge: true
 prevent-lobby-spawn-mobs-in-radius: 16
 spawner-holo-height: 0.25
@@ -30,7 +30,13 @@ game-start-items:
     - leather_chestplate
 player-respawn-items:
   enabled: false
-  items: []
+  items:
+    - wooden_sword
+    - leather_helmet
+    - leather_boots
+    - leather_leggings
+    - leather_chestplate
+    - wooden_pickaxe
 disable-hunger: true
 automatic-coloring-in-shop: true
 sell-max-64-per-click-in-shop: true
@@ -73,7 +79,7 @@ title:
   stay: 0
   fadeOut: 0
 items:
-  jointeam: COMPASS
+  jointeam: JUKEBOX
   leavegame: RED_BED
   startgame: DIAMOND
   shopback: BARRIER
@@ -91,7 +97,7 @@ resources:
     material: EMERALD
     color: GREEN
     name: Emerald
-    interval: 60
+    interval: 50
     translate: resource_emerald
     spread: 0.1
   diamond:
@@ -126,27 +132,6 @@ specials:
     break-time: 10
     distance: 1
     material: GLASS
-  protection-wall:
-    is-breakable: false
-    delay: 20
-    break-time: 0
-    width: 5
-    height: 3
-    distance: 2
-    material: CUT_SANDSTONE
-  tnt-sheep:
-    speed: 2.0
-    follow-range: 10.0
-    max-target-distance: 32
-    explosion-time: 8
-  arrow-blocker:
-    protection-time: 10
-    delay: 5
-  warp-powder:
-    teleport-time: 6
-    delay: 0
-  magnet-shoes:
-    probability: 75
   golem:
     speed: 0.25
     follow-range: 10
